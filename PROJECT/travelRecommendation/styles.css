@@ -1,0 +1,41 @@
+/* Utils */
+.u-NoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Navigation {
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  padding: 16px 16px;
+}
+
+.Navigation__InputWrapper {
+  position: relative;
+}
+
+.Navigation__SearchInput {
+  width: 240px;
+  height: 32px;
+  font-size: 12px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  box-shadow: 0px 2px 8px 0px rgba(60, 64, 67, 0.25);
+  background-color: #fff;
+  outline: none;
+  padding: 0 16px;
+}
+
+.Navigation__SearchInputIcon {
+  position: absolute;
+  left: 240px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
