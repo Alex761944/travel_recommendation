@@ -111,10 +111,9 @@ p {
 }
 
 .PageContent {
-  width: 200px;
+  width: 100%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(0, 0, 0);
-  margin-left: 24px;
 }
 
 .SocialMedia {
@@ -154,6 +153,13 @@ p {
   height: 24px;
   background-color: rgb(82, 82, 82);
   color: white;
+}
+
+.ContactUs {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 24px;
 }
 
 .Section {
