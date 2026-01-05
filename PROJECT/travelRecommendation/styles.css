@@ -156,13 +156,6 @@ p {
   color: white;
 }
 
-.ContactUs {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  gap: 24px;
-}
-
 .Section {
   padding: 24px 24px;
   max-width: 1200px;
