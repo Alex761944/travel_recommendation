@@ -5,7 +5,7 @@
     <title>Travel Wayfare</title>
 
     <link rel="stylesheet" href="styles.css" />
-    <script src="./travel_recommendation.js"></script>
+    <script src="./travel_recommendation.js" defer></script>
   </head>
 
   <body>
@@ -47,6 +47,7 @@
 
         <div class="Navigation__InputWrapper">
           <input
+            id="search-input"
             class="Navigation__SearchInput"
             name="search-input"
             type="text"
@@ -70,7 +71,9 @@
           </svg>
 
           <div class="Navigation__SearchInputButtons">
-            <button class="Navigation__SearchInputButton">Search</button>
+            <button id="search-button" class="Navigation__SearchInputButton">
+              Search
+            </button>
             <button class="Navigation__SearchInputButton">Clear</button>
           </div>
         </div>
