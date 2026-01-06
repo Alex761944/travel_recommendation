@@ -5,7 +5,6 @@
     <title>Travel Wayfare</title>
 
     <link rel="stylesheet" href="styles.css" />
-    <script src="./travel_recommendation.js"></script>
   </head>
 
   <body>
@@ -36,7 +35,7 @@
             <a href="./travel_recommendation.html">Home</a>
           </li>
 
-          <li class="Navigation__Item">
+          <li class="Navigation__Item Navigation__Item--Active">
             <a href="./about_us.html">About Us</a>
           </li>
 
@@ -47,125 +46,157 @@
       </nav>
     </header>
 
-    <div class="Section Section--Vertical">
-      <h2>ABOUT US</h2>
+    <main class="Main">
+      <div class="Section Section--Vertical">
+        <h2>ABOUT US</h2>
 
-      <p>
-        Welcome to Our Company! We are a team of passionate individuals
-        dedicated to <br />
-        providing excellent services/products to our customers. Our mission is
-        to <strong>proviude the best experience</strong> for people traveling to
-        different destinations around the world. <br />
-        Our values include integrity, innovation, customer satisfaction, and
-        teamwork. We believe in <strong>putting our customers first</strong> and
-        <strong>working together</strong> to achieve <br />
-        our goals. <br />
-        Feel free to explore our website to learn more about what we offer!
-      </p>
+        <p>
+          Welcome to Our Company! We are a team of passionate individuals
+          dedicated to <br />
+          providing excellent services/products to our customers. Our mission is
+          to <strong>proviude the best experience</strong> for people traveling
+          to different destinations around the world. <br />
+          Our values include integrity, innovation, customer satisfaction, and
+          teamwork. We believe in
+          <strong>putting our customers first</strong> and
+          <strong>working together</strong> to achieve <br />
+          our goals. <br />
+          Feel free to explore our website to learn more about what we offer!
+        </p>
+      </div>
 
-      <div class="Employees">
+      <div class="Section Section--Vertical">
         <h2>
           OUR <br />
           TEAM
         </h2>
 
-        <div class="Employees__Item">
-          <img src="./images/employee.png" alt="" /> <strong>John Doe</strong
-          ><br />Johne is responsible for CEO stuff
-          <hr />
-          <div class="Employees__Role">CEO</div>
-        </div>
+        <ul class="Employees u-NoList">
+          <li>
+            <div class="EmployeeCard">
+              <div class="EmployeeCard__Details">
+                <img src="./images/employee.png" alt="" />
+                <strong>John Doe</strong>
+              </div>
 
-        <div class="Employees__Item">
-          <img src="./images/employee.png" alt="" />
-          <strong>Celina Thomas</strong><br />Johne is responsible for team
-          stuff
-          <hr />
-          <div class="Employees__Role">Team Lead</div>
-        </div>
+              <div class="EmployeeCard__Description">
+                <p>John is responsible for CEO stuff</p>
+              </div>
 
-        <div class="Employees__Item">
-          <img src="./images/employee.png" alt="" /> <strong>Mike Tyson</strong
-          ><br />Johne is responsible for delivery stuff
-          <hr />
-          <div class="Employees__Role">Delivery Head</div>
-        </div>
+              <hr />
+
+              <div class="EmployeeCard__Role">CEO</div>
+            </div>
+          </li>
+
+          <li>
+            <div class="EmployeeCard">
+              <div class="EmployeeCard__Details">
+                <img src="./images/employee.png" alt="" />
+                <strong>Celina Thomas</strong>
+              </div>
+
+              <div class="EmployeeCard__Description">
+                <p>Celina is responsible for team stuff</p>
+              </div>
+
+              <hr />
+
+              <div class="EmployeeCard__Role">Team Lead</div>
+            </div>
+          </li>
+
+          <li>
+            <div class="EmployeeCard">
+              <div class="EmployeeCard__Details">
+                <img src="./images/employee.png" alt="" />
+                <strong>Mike Tyson</strong>
+              </div>
+
+              <div class="EmployeeCard__Description">
+                <p>Mike is responsible for delivery stuff</p>
+              </div>
+
+              <hr />
+
+              <div class="EmployeeCard__Role">Delivery Head</div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div>
+    </main>
 
-    <div class="Section">
-      <footer>
-        <div class="SocialMedia">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-twitter-icon lucide-twitter"
-          >
-            <path
-              d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
-            />
-          </svg>
+    <footer class="Footer">
+      <div class="SocialMedia">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-twitter-icon lucide-twitter"
+        >
+          <path
+            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+          />
+        </svg>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-facebook-icon lucide-facebook"
-          >
-            <path
-              d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-            />
-          </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-facebook-icon lucide-facebook"
+        >
+          <path
+            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+          />
+        </svg>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-instagram-icon lucide-instagram"
-          >
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-          </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-instagram-icon lucide-instagram"
+        >
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+        </svg>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-youtube-icon lucide-youtube"
-          >
-            <path
-              d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
-            />
-            <path d="m10 15 5-3-5-3z" />
-          </svg>
-        </div>
-      </footer>
-    </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-youtube-icon lucide-youtube"
+        >
+          <path
+            d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+          />
+          <path d="m10 15 5-3-5-3z" />
+        </svg>
+      </div>
+    </footer>
   </body>
 </html>

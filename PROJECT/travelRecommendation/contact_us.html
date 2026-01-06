@@ -5,7 +5,6 @@
     <title>Travel Wayfare</title>
 
     <link rel="stylesheet" href="styles.css" />
-    <script src="./travel_recommendation.js"></script>
   </head>
 
   <body>
@@ -40,35 +39,53 @@
             <a href="./about_us.html">About Us</a>
           </li>
 
-          <li class="Navigation__Item">
+          <li class="Navigation__Item Navigation__Item--Active">
             <a href="./contact_us.html">Contact Us</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <div class="Section Section--Vertical">
-      <h2>CONTACT US</h2>
+    <main class="Main">
+      <div class="Section Section--Vertical">
+        <h2>CONTACT US</h2>
 
-      <div class="ContactUs">
-        <label for="name">Name</label>
-        <input type="text" name="name" placeholder="Enter your name..." />
+        <form class="Form">
+          <div class="FormField">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name..."
+              required
+            />
+          </div>
 
-        <label for="email">Email</label>
-        <input type="text" name="email" placeholder="Enter your email..." />
+          <div class="FormField">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email..."
+              required
+            />
+          </div>
 
-        <label for="message">Message</label>
-        <textarea
-          name="message"
-          id=""
-          placeholder="Enter your message..."
-        ></textarea>
+          <div class="FormField">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              placeholder="Enter your message..."
+              required
+            ></textarea>
+          </div>
 
-        <button>Submit</button>
+          <button class="Button">Submit</button>
+        </form>
       </div>
-    </div>
+    </main>
 
-    <footer>
+    <footer class="Footer">
       <div class="SocialMedia">
         <svg
           xmlns="http://www.w3.org/2000/svg"
