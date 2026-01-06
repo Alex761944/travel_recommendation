@@ -179,6 +179,22 @@ p {
   bottom: 24px;
 }
 
+.SearchResults {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.ResultCard {
+  width: 400px;
+  height: 300px;
+}
+
+.ResultCard img {
+  width: 400px;
+  height: 200px;
+}
+
 .Employees {
   display: flex;
   align-items: center;
