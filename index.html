@@ -5,6 +5,7 @@
     <title>Travel Wayfare</title>
 
     <link rel="stylesheet" href="styles.css" />
+    <script src="./travel_recommendation.js" defer></script>
   </head>
 
   <body>
@@ -31,11 +32,11 @@
         </div>
 
         <ul class="Navigation__List u-NoList">
-          <li class="Navigation__Item">
-            <a href="./travel_recommendation.html">Home</a>
+          <li class="Navigation__Item Navigation__Item--Active">
+            <a href="./">Home</a>
           </li>
 
-          <li class="Navigation__Item Navigation__Item--Active">
+          <li class="Navigation__Item">
             <a href="./about_us.html">About Us</a>
           </li>
 
@@ -43,86 +44,62 @@
             <a href="./contact_us.html">Contact Us</a>
           </li>
         </ul>
+
+        <div class="Navigation__InputWrapper">
+          <input
+            id="search-input"
+            class="Navigation__SearchInput"
+            name="search-input"
+            type="text"
+            placeholder="Enter a destination or keyword..."
+          />
+
+          <svg
+            class="Navigation__SearchInputIcon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m21 21-4.34-4.34" />
+            <circle cx="11" cy="11" r="8" />
+          </svg>
+
+          <div class="Navigation__SearchInputButtons">
+            <button id="search-button" class="Button Button--Small">
+              Search
+            </button>
+
+            <button id="clear-button" class="Button Button--Small">
+              Clear
+            </button>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main class="Main">
       <div class="Section Section--Vertical">
-        <h2>ABOUT US</h2>
+        <h2>
+          EXPLORE <br />
+          DREAM <br />
+          DESTINATION
+        </h2>
 
         <p>
-          Welcome to Our Company! We are a team of passionate individuals
-          dedicated to <br />
-          providing excellent services/products to our customers. Our mission is
-          to <strong>proviude the best experience</strong> for people traveling
-          to different destinations around the world. <br />
-          Our values include integrity, innovation, customer satisfaction, and
-          teamwork. We believe in
-          <strong>putting our customers first</strong> and
-          <strong>working together</strong> to achieve <br />
-          our goals. <br />
-          Feel free to explore our website to learn more about what we offer!
+          It encourages exploration of unfamiliar territories, embracing diverse
+          cultures and landscapes, while pursuing the desired destination that
+          captivates the heart and ignites a sense of wonder.
         </p>
       </div>
 
       <div class="Section Section--Vertical">
-        <h2>
-          OUR <br />
-          TEAM
-        </h2>
-
-        <ul class="Employees u-NoList">
-          <li>
-            <div class="EmployeeCard">
-              <div class="EmployeeCard__Details">
-                <img src="./images/employee.png" alt="" />
-                <strong>John Doe</strong>
-              </div>
-
-              <div class="EmployeeCard__Description">
-                <p>John is responsible for CEO stuff</p>
-              </div>
-
-              <hr />
-
-              <div class="EmployeeCard__Role">CEO</div>
-            </div>
-          </li>
-
-          <li>
-            <div class="EmployeeCard">
-              <div class="EmployeeCard__Details">
-                <img src="./images/employee.png" alt="" />
-                <strong>Celina Thomas</strong>
-              </div>
-
-              <div class="EmployeeCard__Description">
-                <p>Celina is responsible for team stuff</p>
-              </div>
-
-              <hr />
-
-              <div class="EmployeeCard__Role">Team Lead</div>
-            </div>
-          </li>
-
-          <li>
-            <div class="EmployeeCard">
-              <div class="EmployeeCard__Details">
-                <img src="./images/employee.png" alt="" />
-                <strong>Mike Tyson</strong>
-              </div>
-
-              <div class="EmployeeCard__Description">
-                <p>Mike is responsible for delivery stuff</p>
-              </div>
-
-              <hr />
-
-              <div class="EmployeeCard__Role">Delivery Head</div>
-            </div>
-          </li>
-        </ul>
+        <ul class="SearchResults u-NoList"></ul>
       </div>
     </main>
 

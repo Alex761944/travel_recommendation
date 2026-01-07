@@ -5,7 +5,6 @@
     <title>Travel Wayfare</title>
 
     <link rel="stylesheet" href="styles.css" />
-    <script src="./travel_recommendation.js" defer></script>
   </head>
 
   <body>
@@ -32,74 +31,57 @@
         </div>
 
         <ul class="Navigation__List u-NoList">
-          <li class="Navigation__Item Navigation__Item--Active">
-            <a href="./travel_recommendation.html">Home</a>
+          <li class="Navigation__Item">
+            <a href="./">Home</a>
           </li>
 
           <li class="Navigation__Item">
             <a href="./about_us.html">About Us</a>
           </li>
 
-          <li class="Navigation__Item">
+          <li class="Navigation__Item Navigation__Item--Active">
             <a href="./contact_us.html">Contact Us</a>
           </li>
         </ul>
-
-        <div class="Navigation__InputWrapper">
-          <input
-            id="search-input"
-            class="Navigation__SearchInput"
-            name="search-input"
-            type="text"
-            placeholder="Enter a destination or keyword..."
-          />
-
-          <svg
-            class="Navigation__SearchInputIcon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="m21 21-4.34-4.34" />
-            <circle cx="11" cy="11" r="8" />
-          </svg>
-
-          <div class="Navigation__SearchInputButtons">
-            <button id="search-button" class="Button Button--Small">
-              Search
-            </button>
-
-            <button id="clear-button" class="Button Button--Small">
-              Clear
-            </button>
-          </div>
-        </div>
       </nav>
     </header>
 
     <main class="Main">
       <div class="Section Section--Vertical">
-        <h2>
-          EXPLORE <br />
-          DREAM <br />
-          DESTINATION
-        </h2>
+        <h2>CONTACT US</h2>
 
-        <p>
-          It encourages exploration of unfamiliar territories, embracing diverse
-          cultures and landscapes, while pursuing the desired destination that
-          captivates the heart and ignites a sense of wonder.
-        </p>
-      </div>
+        <form class="Form">
+          <div class="FormField">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name..."
+              required
+            />
+          </div>
 
-      <div class="Section Section--Vertical">
-        <ul class="SearchResults u-NoList"></ul>
+          <div class="FormField">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email..."
+              required
+            />
+          </div>
+
+          <div class="FormField">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              placeholder="Enter your message..."
+              required
+            ></textarea>
+          </div>
+
+          <button class="Button">Submit</button>
+        </form>
       </div>
     </main>
 
