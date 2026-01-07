@@ -19,15 +19,15 @@ function handleSearch() {
 
   let results = [];
 
-  if (query === "beach" || "beaches") {
+  if (query === "beach" || query === "beaches") {
     results = travelData.beaches;
   }
 
-  if (query === "temple" || "temples") {
+  if (query === "temple" || query === "temples") {
     results = travelData.temples;
   }
 
-  if (query === "country" || "countries") {
+  if (query === "country" || query === "countries") {
     results = [];
 
     travelData.countries.forEach((country) => {
