@@ -13,21 +13,40 @@ function handleClear() {
 }
 
 function handleSearch() {
-  const searchInputValue = searchInputElement.value;
-  const query = searchInputValue.trim().toLowerCase();
+  const query = searchInputElement.value.trim().toLowerCase();
 
-  const results = travelData.filter((item) => {
-    return item.name.toLowerCase().includes(query);
-  });
+  searchResultsElement.innerHTML = "";
+
+  let results = [];
+
+  if (query === "beach") {
+    results = travelData.beaches;
+  }
+
+  if (query === "temple") {
+    results = travelData.temples;
+  }
+
+  if (query === "country") {
+    results = [];
+
+    travelData.countries.forEach((country) => {
+      country.cities.forEach((city) => {
+        results.push(city);
+      });
+    });
+  }
 
   results.forEach((result) => {
     const resultCardElement = document.createElement("li");
     resultCardElement.classList.add("ResultCard");
+
     resultCardElement.innerHTML = `
-    <img src="${result.imageUrl}" />
-    <p>${result.name}</p>
-    <p>${result.description}</p>
+      <img src="${result.imageUrl}" alt="${result.name}">
+      <p>${result.name}</p>
+      <p>${result.description}</p>
     `;
+
     searchResultsElement.appendChild(resultCardElement);
   });
 }
@@ -35,14 +54,7 @@ function handleSearch() {
 async function loadData() {
   const response = await fetch("travel_recommendation_api.json");
   travelData = await response.json();
-
-  const cities = [];
-
-  travelData.countries.forEach((country) => {
-    cities.push(...country.cities);
-  });
-
-  travelData = [...cities, ...travelData.temples, ...travelData.beaches];
+  console.log(travelData);
 }
 
 loadData();
