@@ -19,15 +19,15 @@ function handleSearch() {
 
   let results = [];
 
-  if (query === "beach") {
+  if (query === "beach" || "beaches") {
     results = travelData.beaches;
   }
 
-  if (query === "temple") {
+  if (query === "temple" || "temples") {
     results = travelData.temples;
   }
 
-  if (query === "country") {
+  if (query === "country" || "countries") {
     results = [];
 
     travelData.countries.forEach((country) => {
@@ -54,7 +54,6 @@ function handleSearch() {
 async function loadData() {
   const response = await fetch("travel_recommendation_api.json");
   travelData = await response.json();
-  console.log(travelData);
 }
 
 loadData();
